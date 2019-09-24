@@ -1,0 +1,67 @@
+[
+  {
+    "id": "a7b68baf-b658-4dd0-9ae0-6b2d9b7d1a3a",
+    "name": "things-layout-apollon",
+    "description": "상하 1:1 분할, 하단 좌우 1:1 분할 레이아웃"
+  },
+  {
+    "id": "cb29d159-fbbf-4e1c-b561-eba6fa9eeb60",
+    "name": "things-layout-ares",
+    "description": "상하 1:1분할 상단 좌우 분할 레이아웃"
+  },
+  {
+    "id": "8479324e-7897-440c-8d06-d8f0c57175c9",
+    "name": "things-layout-artemis",
+    "description": "상하 1:1 분할 상단 3분할 레이아웃"
+  },
+  {
+    "id": "e8006e7c-2b2f-428c-84f5-7cc351cf0b01",
+    "name": "things-layout-athena",
+    "description": "좌우 분할, 우측 상하 분할 레이아웃"
+  },
+  {
+    "id": "c73e7f98-3457-472d-a5e3-0c59d24d1fe3",
+    "name": "things-layout-demeter",
+    "description": "화면 1:1:1:1 상하좌우 분할 레이아웃"
+  },
+  {
+    "id": "be8b0a63-e21a-4ec2-a07c-1ee4dbe7f556",
+    "name": "things-layout-gaia",
+    "description": "하나의 레이아웃"
+  },
+  {
+    "id": "ab661013-8661-45a5-a398-b160569a7229",
+    "name": "things-layout-hades",
+    "description": "멀티 탭 레이아웃"
+  },
+  {
+    "id": "5a56e1c2-ac9e-4e5c-a23f-b81ff4499470",
+    "name": "things-layout-hephaestus",
+    "description": "상하 1:1 분할 하단 3분할 레이아웃"
+  },
+  {
+    "id": "2dae5267-4747-4f79-a055-8bff48e8edb4",
+    "name": "things-layout-hera",
+    "description": "좌우 1:1 분할 레이아웃"
+  },
+  {
+    "id": "1483503c-5bce-4e68-8f65-fdec28465b2b",
+    "name": "things-layout-hermes",
+    "description": "좌우 1:1 분할 좌단 상하 분할 레이아웃"
+  },
+  {
+    "id": "972708fa-e846-41f0-bf5c-d116685edfbc",
+    "name": "things-layout-mercury",
+    "description": "좌우 1:1 분할 좌단 상(Flex) - 하 분할 레이아웃"
+  },
+  {
+    "id": "3e534e63-7557-4362-ab7f-b75801c1bd96",
+    "name": "things-layout-poseidon",
+    "description": "상하 분할, 하단 탭 10개까지 추가가능 레이아웃"
+  },
+  {
+    "id": "638c6cde-69cd-4ffb-a14a-480fb2b2c5f2",
+    "name": "things-layout-zeus",
+    "description": "상하 1:1 분할 레이아웃"
+  }
+]

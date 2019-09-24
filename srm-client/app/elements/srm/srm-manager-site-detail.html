@@ -1,0 +1,422 @@
+<!--
+@license
+Copyright © HatioLab Inc. All rights reserved.
+-->
+
+
+<dom-module id="srm-manager-site-detail">
+    <template>
+        <style>
+            :host{
+              display:block;
+              @apply(--layout-vertical);
+            }
+            #layout-flex {
+              @apply(--layout-flex);
+              @apply(--layout-vertical);
+            }
+            things-resource-grid {
+              @apply(--layout-flex);
+            }
+          </style>
+          <div class="[[layout]]" id="layout-flex">
+            <things-ajax
+              auto
+              id="resource-search"
+              method="GET"
+              resource-url="[[gridSearchUrl]]"
+              last-response="{{lastResponse}}"
+              auto>
+            </things-ajax>
+      
+            <things-resource-grid
+              id="grid"
+              config="[[gridConfig]]"
+              model="[[gridModel]]"
+              columns="[[gridColumns]]"
+              data="[[items]]"
+              grid-save-action="[[gridSaveUrl]]"
+              fixed-column-count="2"
+              buttons="[[buttons]]">
+            </things-resource-grid>
+          </div>
+    </template>
+    <script>
+        Polymer({
+            is: 'srm-manager-site-detail',
+
+            behaviors: [
+                Things.ResourceSelectorBehavior,
+                Things.ViewOpenBehavior
+            ],
+
+            properties: {
+                /**
+                 * Manager Id
+                 */
+                managerId: {
+                    type: Number
+                },
+
+                /**
+                 * 
+                 */
+                 resource: {
+                    type: Object,
+                    observer: '_onResourceChanged'
+                },
+
+                /**
+                 * r
+                 */
+                lastResponse: {
+                    type: Array,
+                    observer: '_managersSitesChanged'
+                },
+                
+                /**
+                 * Grid model
+                 */
+                gridModel: {
+                    type: Array,
+                    value: [{
+                        fieldName: 'id'
+                    }, {
+                        fieldName: 'site',
+                        dataType: 'object'
+                    }, {
+                        fieldName: 'center_name'
+                    },  {
+                        fieldName: 'site_domain'
+                    }, {
+                        fieldName: 'site_url'
+                    }, {
+                        fieldName: 'site_ip'
+                    }, {
+                        fieldName: 'site_port'
+                    }, {
+                        fieldName: 'business_type'
+                    }, {
+                        fieldName: 'main_customer_name'
+                    }, {
+                        fieldName: 'main_hatiolab_user_name'
+                    }, {
+                        fieldName: 'active'
+                    }]
+                },
+
+                /**
+                 * Grid columns
+                 */
+                 gridColumns: {
+                    type: Array,
+                    value: []
+                },
+
+                /**
+                 * 
+                 */
+                 gridSearchUrl: {
+                    type: String,
+                    computed: '_computeSiteSearchUrl(managerId)'
+                },
+
+                /**
+                 * 
+                 */
+                 gridSaveUrl: {
+                    type: String,
+                    computed: '_computeSiteColumnSaveUrl(managerId)',
+                },
+
+                /**
+                 * 버튼 정보
+                 */
+                 buttons: {
+                    type: Array,
+                    value: [{
+                        id: 'add-btn',
+                        text: 'add',
+                        icon: 'icons:add'
+                    }, {
+                        id: 'save-btn',
+                        text: 'save',
+                        icon: 'icons:save'
+                    }, {
+                        id: 'delete-btn',
+                        text: 'delete',
+                        icon: 'icons:delete'
+                    }]
+                }
+            },
+
+            listeners: {
+                'things-resource-selector-selected': '_onResourceSelectorSelected',
+                'grid.things-grid-save-success': 'reloadGrid',
+                'grid.things-grid-resource-column-edit': '_openResourceSelector',
+                'grid.things-grid-handle-addrow': '_addRow',
+                'grid.things-grid-handle-save': '_beforeColumnsSave'
+            },
+
+            attached: function() {
+                this.gridColumns = [
+                    {
+                        fieldName: 'id',
+                        width: 0
+                    },
+                    {
+                        fieldName: 'site',
+                        name: 'site',
+                        width: 200,
+                        editable: false,
+                        header: {
+                            text: Things.DataGlobal.t('label.site')
+                        },
+                        styles: {
+                            iconIndex: 'resource-selector'
+                        },
+                        userData: {
+                            resourceType: 'Entity',
+                            resourceName: 'Site',
+                            ownerField: 'site'
+                        },
+                        displayCallback: function(index, value) {
+                            var rowObj = index.getRow().getRowObject();
+                            var siteObj = rowObj.site;
+                            return siteObj ? siteObj.name : '';
+                        }
+                    },
+                    {
+                        fieldName: 'center_name',
+                        width: 200,
+                        editable: false,
+                        header: {
+                            text: Things.DataGlobal.t('label.center_name')
+                        }
+                    },
+                    {
+                        fieldName: 'site_domain',
+                        width: 200,
+                        editable: false,
+                        header: {
+                            text: Things.DataGlobal.t('label.site_domain')
+                        }
+                    },
+                    {
+                        fieldName: 'site_url',
+                        width: 200,
+                        editable: false,
+                        header: {
+                            text: Things.DataGlobal.t('label.site_url')
+                        }
+                    },
+                    {
+                        fieldName: 'site_ip',
+                        width: 200,
+                        editable: false,
+                        header: {
+                            text: Things.DataGlobal.t('label.site_ip')
+                        }
+                    },
+                    {
+                        fieldName: 'site_port',
+                        width: 200,
+                        editable: false,
+                        header: {
+                            text: Things.DataGlobal.t('label.site_port')
+                        }
+                    },
+                    {
+                        fieldName: 'business_type',
+                        width: 200,
+                        editable: false,
+                        header: {
+                            text: Things.DataGlobal.t('label.business_type')
+                        }
+                    },
+                    {
+                        fieldName: 'main_customer_name',
+                        width: 200,
+                        editable: false,
+                        header: {
+                            text: Things.DataGlobal.t('label.main_customer_name')
+                        }
+                    },
+                    {
+                        fieldName: 'main_hatiolab_user_name',
+                        width: 200,
+                        editable: false,
+                        header: {
+                            text: Things.DataGlobal.t('label.main_hatiolab_user_name')
+                        }
+                    },
+                    {
+                        fieldName: 'active',
+                        width: 200,
+                        editable: false,
+                        header: {
+                            text: Things.DataGlobal.t('label.active')
+                        }
+                    }
+                ];
+            },
+
+            /**
+             * Resource 변경시
+             *
+             * @param {Object} resource
+             */
+             _onResourceChanged: function(resource) {
+                this.managerId = resource.id;
+            },
+
+            /**
+             * Resource Selector의 선택된 detail 정보
+             *
+             * @param {Object} event
+             */
+             _onResourceSelectorSelected: function(event) {
+                var resource = event.detail.resource;
+                var rowObj = event.detail.rowObj;
+                console.log('rowObj', rowObj);
+                rowObj.id = resource.id;
+                rowObj.name = resource.name;
+                rowObj.center_name = resource.center_name;
+                rowObj.site_domain = resource.site_domain;
+                rowObj.site_url = resource.site_url;
+                rowObj.site_ip = resource.site_ip;
+                rowObj.site_port = resource.site_port;
+                rowObj.main_customer_name = resource.main_customer_name;
+                rowObj.main_hatiolab_user_name = resource.main_hatiolab_user_name;
+                rowObj.active = resource.active;
+                
+            },
+
+            /**
+             * Open Resource Selector Dialog
+             *
+             * @param {Object} event
+             */
+             _openResourceSelector: function(event) {
+                event.preventDefault();
+                var index = event.detail.index;
+                var grid = index._grid;
+                var rowObj = grid.focusedRow().getRowObject();
+                if (!rowObj.id) {
+                    this.openResourceSelectorByGrid(index._grid, index.rowIndex, event.detail.userData, true);
+                }
+            },
+
+            /**
+             * Site - Manager Link detail 정보에 manager 정보를 추가
+             *
+             * @param {Object} lastResponse
+             */
+             _managersSitesChanged: function(lastResponse) {
+                if (lastResponse && lastResponse.length > 0) {
+                    this.items = lastResponse.map(function(item) {
+                        item.site = {
+                            id: item.id,
+                            name: item.name
+                        };
+                        return item;
+                    });
+                } else {
+                    this.items = [];
+                }
+            },
+
+            /**
+             * Add grid row
+             *
+             * @param {Object} e
+             */
+            _addRow: function(e) {
+                e.preventDefault();
+                this.$.grid.dataSet.insertRow(0, {
+                    id: null,
+                    center_name: '',
+                    site_domain: '',
+                    site_url: '',
+                    site_ip: '',
+                    site_port: '',
+                    business_type: '',
+                    main_customer_name: '',
+                    main_hatiolab_user_name: '',
+                    active: '',
+                    site: {
+                        id: null,
+                        name: ''
+                    }
+                });
+            },
+
+            /**
+             * Site Manager Search URL
+             *
+             * @param {Object} managerId
+             */
+             _computeSiteSearchUrl: function(managerId) {
+                return 'srm_site/' + managerId + '/detail';
+            },
+
+            /**
+             * Site ID 로 Site 와 Manager 를 연결하는 링크 생성 (SiteManagerLink)
+             *
+             * @param {Object} managerId
+             */
+             _computeSiteColumnSaveUrl: function(managerId) {
+                return 'srm_site/' + managerId + '/detail/update_multiple';
+            },
+
+            /**
+             * Column 저장 전에 Grid 의 변경된 정보를 추출(grid.wirteData)하여 어떤 정보가 어떻게(생성, 삭제, 수정) 변경 되었는지 전달
+             *
+             * @param {Object} event
+             */
+             _beforeColumnsSave: function(event) {
+                var grid = event.target;
+                var changedList = Object.assign([],grid.writeData);
+
+                if (changedList && changedList.length > 0) {
+                    grid.writeData = changedList.map(function(changedData) {
+                        var site = {
+                            site_id: changedData.site.id,
+                            cud_flag_: changedData.cud_flag_
+                        };
+                        return site
+                    });
+                }
+            },
+
+            /**
+             * Reload grid data
+             *
+             * @param {Object} e
+             */
+             reloadGrid: function(e) {
+                this.$['resource-search'].generateRequest();
+            },
+
+            /***************************************************************************************
+             *                            Start detail item view interface
+             ***************************************************************************************/
+
+            /**
+             * detail item view를 구성하기 위한 필수 함수 - item view를 구성한다.
+             *
+             * @return {Object} resource 리소스 데이터 (Object) 혹은 리소스 아이디 (Number)
+             */
+             loadDetailData: function(resource) {
+                if (resource) {
+                    this.resource = resource;
+                    this.managerId = resource.id;
+                }
+            }
+
+            /***************************************************************************************
+             *                            End detail item view interface
+             ***************************************************************************************/
+        })
+    </script>
+</dom-module>

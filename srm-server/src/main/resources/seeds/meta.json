@@ -1,0 +1,16 @@
+[
+	{"bundle" : "sys", "entity": "xyz.elidom.sys.entity.Setting"},
+	{"bundle" : "sec", "entity": "xyz.elidom.sec.entity.Role"},
+	{"bundle" : "msg", "entity": "xyz.elidom.msg.entity.Terminology"},
+	{"bundle" : "msg", "entity": "xyz.elidom.msg.entity.Message"},
+	{"bundle" : "core", "entity": "xyz.elidom.core.entity.DomainApp"},
+	{"bundle" : "core", "entity": "xyz.elidom.core.entity.Code", "subEntities": "xyz.elidom.core.entity.CodeDetail"},
+	{"bundle" : "core", "entity": "xyz.elidom.core.entity.Storage"},
+	{"bundle" : "base", "entity": "xyz.elidom.base.entity.Resource", "subEntities": "xyz.elidom.base.entity.ResourceColumn"},
+	{"bundle" : "base", "entity": "xyz.elidom.base.entity.Menu", "subEntities": "xyz.elidom.base.entity.MenuColumn,xyz.elidom.base.entity.MenuButton,xyz.elidom.base.entity.MenuParam"},
+	{"bundle" : "base", "entity": "xyz.elidom.base.entity.MenuDetail", "subEntities": "xyz.elidom.base.entity.MenuDetailColumn,xyz.elidom.base.entity.MenuDetailButton"},
+	{"bundle" : "dev", "entity": "xyz.elidom.dev.entity.DiyService"}, 
+	{"bundle" : "dev", "entity": "xyz.elidom.dev.entity.DiyTemplate"},
+	{"bundle" : "screen", "entity": "xyz.elidom.screen.entity.ViewTemplate"},
+	{"bundle" : "sec", "entity": "xyz.elidom.sec.entity.Permission"}
+]

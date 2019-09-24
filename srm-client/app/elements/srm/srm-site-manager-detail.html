@@ -1,0 +1,349 @@
+<!--
+@license
+Copyright © HatioLab Inc. All rights reserved.
+-->
+
+
+<dom-module id="srm-site-manager-detail">
+    <template>
+        <style>
+            :host{
+              display:block;
+              @apply(--layout-vertical);
+            }
+            #layout-flex {
+              @apply(--layout-flex);
+              @apply(--layout-vertical);
+            }
+            things-resource-grid {
+              @apply(--layout-flex);
+            }
+          </style>
+          <div class="[[layout]]" id="layout-flex">
+            <things-ajax
+              auto
+              id="resource-search"
+              method="GET"
+              resource-url="[[gridSearchUrl]]"
+              last-response="{{lastResponse}}"
+              auto>
+            </things-ajax>
+      
+            <things-resource-grid
+              id="grid"
+              config="[[gridConfig]]"
+              model="[[gridModel]]"
+              columns="[[gridColumns]]"
+              data="[[items]]"
+              grid-save-action="[[gridSaveUrl]]"
+              fixed-column-count="2"
+              buttons="[[buttons]]">
+            </things-resource-grid>
+          </div>
+    </template>
+    <script>
+        Polymer({
+            is: 'srm-site-manager-detail',
+
+            behaviors: [
+                Things.ResourceSelectorBehavior,
+                Things.ViewOpenBehavior
+            ],
+
+            properties: {
+                /**
+                 * Site Id
+                 */
+                siteId: {
+                    type: Number
+                },
+
+                /**
+                 * 
+                 */
+                 resource: {
+                    type: Object,
+                    observer: '_onResourceChanged'
+                },
+
+                /**
+                 * r
+                 */
+                lastResponse: {
+                    type: Array,
+                    observer: '_sitesManagersChanged'
+                },
+                
+                /**
+                 * Grid model
+                 */
+                gridModel: {
+                    type: Array,
+                    value: [{
+                        fieldName: 'id'
+                    }, {
+                        fieldName: 'manager',
+                        dataType: 'object'
+                    }, {
+                        fieldName: 'phone_number'
+                    }, {
+                        fieldName: 'email'
+                    }, {
+                        fieldName: 'manager_class'
+                    }]
+                },
+
+                /**
+                 * Grid columns
+                 */
+                 gridColumns: {
+                    type: Array,
+                    value: []
+                },
+
+                /**
+                 * 
+                 */
+                 gridSearchUrl: {
+                    type: String,
+                    computed: '_computeManagerSearchUrl(siteId)'
+                },
+
+                /**
+                 * 
+                 */
+                 gridSaveUrl: {
+                    type: String,
+                    computed: '_computeManagerColumnSaveUrl(siteId)',
+                },
+
+                /**
+                 * 버튼 정보
+                 */
+                 buttons: {
+                    type: Array,
+                    value: [{
+                        id: 'add-btn',
+                        text: 'add',
+                        icon: 'icons:add'
+                    }, {
+                        id: 'save-btn',
+                        text: 'save',
+                        icon: 'icons:save'
+                    }, {
+                        id: 'delete-btn',
+                        text: 'delete',
+                        icon: 'icons:delete'
+                    }]
+                }
+            },
+
+            listeners: {
+                'things-resource-selector-selected': '_onResourceSelectorSelected',
+                'grid.things-grid-save-success': 'reloadGrid',
+                'grid.things-grid-resource-column-edit': '_openResourceSelector',
+                'grid.things-grid-handle-addrow': '_addRow',
+                'grid.things-grid-handle-save': '_beforeColumnsSave'
+                // 'grid.things-grid-handle-built-writedata' : '_setupWriteData'
+            },
+
+            attached: function() {
+                this.gridColumns = [
+                    {
+                        fieldName: 'id',
+                        width: 0
+                    },
+                    {
+                        fieldName: 'manager',
+                        name: 'manager',
+                        width: 200,
+                        editable: false,
+                        header: {
+                            text: Things.DataGlobal.t('label.manager')
+                        },
+                        styles: {
+                            iconIndex: 'resource-selector'
+                        },
+                        userData: {
+                            resourceType: 'Entity',
+                            resourceName: 'Manager',
+                            ownerField: 'manager'
+                        },
+                        displayCallback: function(index, value) {
+                            var rowObj = index.getRow().getRowObject();
+                            var managerObj = rowObj.manager;
+                            return managerObj ? managerObj.name : '';
+                        }
+                    },
+                    {
+                        fieldName: 'phone_number',
+                        width: 200,
+                        editable: false,
+                        header: {
+                            text: Things.DataGlobal.t('label.phone_number')
+                        }
+                    },
+                    {
+                        fieldName: 'email',
+                        width: 200,
+                        editable: false,
+                        header: {
+                            text: Things.DataGlobal.t('label.email')
+                        }
+                    },
+                    {
+                        fieldName: 'manager_class',
+                        width: 200,
+                        editable: false,
+                        header: {
+                            text: Things.DataGlobal.t('label.manager_class')
+                        }
+                    }
+                ];
+            },
+
+            /**
+             * Resource 변경시
+             *
+             * @param {Object} resource
+             */
+             _onResourceChanged: function(resource) {
+                this.siteId = resource.id;
+            },
+
+            /**
+             * Resource Selector의 선택된 detail 정보
+             *
+             * @param {Object} event
+             */
+             _onResourceSelectorSelected: function(event) {
+                var resource = event.detail.resource;
+                var rowObj = event.detail.rowObj;
+                rowObj.id = resource.id;
+                rowObj.phone_number = resource.phone_number;
+                rowObj.email = resource.email;
+                rowObj.manager_class = resource.manager_class;
+            },
+
+            /**
+             * Open Resource Selector Dialog
+             *
+             * @param {Object} event
+             */
+             _openResourceSelector: function(event) {
+                event.preventDefault();
+                var index = event.detail.index;
+                var grid = index._grid;
+                var rowObj = grid.focusedRow().getRowObject();
+                if (!rowObj.id) {
+                    this.openResourceSelectorByGrid(index._grid, index.rowIndex, event.detail.userData, true);
+                }
+            },
+
+            /**
+             * Site - Manager Link detail 정보에 manager 정보를 추가
+             *
+             * @param {Object} lastResponse
+             */
+             _sitesManagersChanged: function(lastResponse) {
+                if (lastResponse && lastResponse.length > 0) {
+                    this.items = lastResponse.map(function(item) {
+                        item.manager = {
+                            id: item.id,
+                            name: item.name
+                        };
+                        return item;
+                    });
+                } else {
+                    this.items = [];
+                }
+            },
+
+            /**
+             * Add grid row
+             *
+             * @param {Object} e
+             */
+            _addRow: function(e) {
+                e.preventDefault();
+                this.$.grid.dataSet.insertRow(0, {
+                    id: null,
+                    phone_number: '',
+                    email: '',
+                    manager_class: '',
+                    manager: {
+                        id: null,
+                        name: ''
+                    }
+                });
+            },
+
+            /**
+             * Site Manager Search URL
+             *
+             * @param {Object} siteId
+             */
+             _computeManagerSearchUrl: function(siteId) {
+                return 'srm_manager/' + siteId + '/detail';
+            },
+
+            /**
+             * Site ID 로 Site 와 Manager 를 연결하는 링크 생성 (SiteManagerLink)
+             *
+             * @param {Object} siteId
+             */
+             _computeManagerColumnSaveUrl: function(siteId) {
+                return 'srm_manager/' + siteId + '/detail/update_multiple';
+            },
+
+            /**
+             * Column 저장 전에 Grid 의 변경된 정보를 추출(grid.wirteData)하여 어떤 정보가 어떻게(생성, 삭제, 수정) 변경 되었는지 전달
+             *
+             * @param {Object} event
+             */
+             _beforeColumnsSave: function(event) {
+                var grid = event.target;
+                var changedList = Object.assign([],grid.writeData);
+
+                if (changedList && changedList.length > 0) {
+                    grid.writeData = changedList.map(function(changedData) {
+                        var manager = {
+                            manager_id: changedData.manager.id,
+                            cud_flag_: changedData.cud_flag_
+                        };
+                        return manager
+                    });
+                }
+            },
+
+            /**
+             * Reload grid data
+             *
+             * @param {Object} e
+             */
+             reloadGrid: function(e) {
+                this.$['resource-search'].generateRequest();
+            },
+
+            /***************************************************************************************
+             *                            Start detail item view interface
+             ***************************************************************************************/
+
+            /**
+             * detail item view를 구성하기 위한 필수 함수 - item view를 구성한다.
+             *
+             * @return {Object} resource 리소스 데이터 (Object) 혹은 리소스 아이디 (Number)
+             */
+             loadDetailData: function(resource) {
+                if (resource) {
+                    this.resource = resource;
+                    this.siteId = resource.id;
+                }
+            }
+
+            /***************************************************************************************
+             *                            End detail item view interface
+             ***************************************************************************************/
+        })
+    </script>
+</dom-module>

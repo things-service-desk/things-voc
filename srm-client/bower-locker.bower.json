@@ -1,0 +1,29 @@
+{
+  "name": "things-suite-base",
+  "private": true,
+  "dependencies": {
+    "font-roboto": "StartPolymer/font-empty#1.1.0",
+    "iron-elements": "PolymerElements/iron-elements",
+    "neon-elements": "PolymerElements/neon-elements",
+    "paper-elements": "PolymerElements/paper-elements",
+    "gold-elements": "PolymerElements/gold-elements",
+    "app-elements": "PolymerElements/app-elements",
+    "platinum-elements": "PolymerElements/platinum-elements",
+    "platinum-sw": "PolymerElements/platinum-sw#1.2.3",
+    "polymer": "Polymer/polymer#1.4.0",
+    "things-elements": "ThingsElements/things-elements",
+    "things-layout-view": "ThingsElements/things-layout-view",
+    "things-base-libs": "ThingsElements/things-base-libs",
+    "paper-swatch-picker": "^1.0.1",
+    "stomp-websocket": "^2.3.4",
+    "sockjs": "^0.3.4"
+  },
+  "license":"http://license.hatiolab.com/EULA",
+  "devDependencies": {
+    "web-component-tester": "^4.2.0"
+  },
+  "ignore": [],
+  "resolutions": {
+    "polymer": "^1.5.0"
+  }
+}

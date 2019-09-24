@@ -1,0 +1,145 @@
+<!--
+@license
+Copyright © HatioLab Inc. All rights reserved.
+-->
+<link rel="import" href="../../bower_components/polymer/polymer.html" />
+<link rel="import" href="../sweetalert/sweetalert2.html" />
+
+<!--
+## things-notice
+	`<things-notice-dialog>`  프로파일 컴포넌트
+
+	Example
+
+			<things-notice></things-notice>
+
+@demo demo/index.html
+-->
+
+<dom-module id="things-notice">
+  <template>
+    <things-ajax
+      id="sec-msg-enabled"
+      resource-url="settings/show_by_name?name=security.login.sec.msg.enabled"
+      resource-action="show_by_name"
+      last-response="{{ secMsgEnabled }}"
+      auto
+    >
+    </things-ajax>
+
+    <iron-ajax id="sec-message" with-credentials></iron-ajax>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'things-notice',
+
+      properties: {
+        secMsgEnabled: {
+          type: Object,
+          value: function() {
+            return {
+              value: false
+            }
+          },
+          observer: '_onSecEnabledChanged'
+        },
+
+        _secMessageConfirmKey: {
+          type: String,
+          value: function() {
+            return btoa('login-security-message')
+          }
+        }
+      },
+
+      listeners: {
+        'sec-message.response': '_onSecMessageResponse'
+      },
+
+      ready: function() {},
+
+      attached: function() {
+        this._logoutHandler = e => {
+          this._clearConfirmFlag()
+        }
+
+        this._routeChangeHandler = e => {
+          this.requestNotice()
+        }
+
+        document.addEventListener('route-changed', this._routeChangeHandler)
+        document.addEventListener('things-logout-succeed', this._logoutHandler)
+      },
+
+      detached: function() {
+        document.removeEventListener('route-changed', this._routeChangeHandler, false)
+        document.removeEventListener('things-logout-succeed', this._logoutHandler, false)
+      },
+
+      _onSecEnabledChanged: function(secMsgEnabled) {
+        if (!secMsgEnabled || !secMsgEnabled.value || !JSON.parse(secMsgEnabled.value)) return
+
+        this.requestNotice()
+      },
+
+      requestNotice: function() {
+        if (!this.secMsgEnabled || !this.secMsgEnabled.value || !JSON.parse(this.secMsgEnabled.value)) return
+
+        this.requestSecMessage()
+      },
+
+      showNoticePopup: function(message) {
+        swal2({
+          // position: 'top-start',
+          // grow: 'fullscreen',
+          showCloseButton: false,
+          allowEscapeKey: false,
+          allowOutsideClick: false,
+          allowEnterKey: false,
+          confirmButtonText: Things.DataGlobal.t('button.confirm'),
+          html: message,
+          onClose: () => {
+            var now = new Date()
+            localStorage.setItem(this._secMessageConfirmKey, btoa(now.toUTCString()))
+          }
+        })
+      },
+
+      requestSecMessage: function() {
+        this.debounce(
+          'request-sec-message',
+          () => {
+            var stored = localStorage.getItem(this._secMessageConfirmKey)
+            var confirmDate = stored ? new Date(atob(stored)) : null
+            var now = new Date()
+            if (confirmDate && now - confirmDate < 12 * 60 * 60 * 1000) return
+
+            var locale = Things.DataGlobal.locale || 'en-US'
+            var baseURL = Things.DataGlobal.baseUrl
+            var url = `${baseURL}/messages/${locale}/LOGIN_SEC_MESSAGE`
+
+            fetch(url, {
+              credentials: 'include'
+            }).then(res => {
+              if (res.ok) {
+                this._onSecMessageResponse(res)
+              }
+            })
+          },
+          300
+        )
+      },
+
+      _onSecMessageResponse: function(res) {
+        res.text().then(t => {
+          this.showNoticePopup(t)
+        })
+      },
+
+      _clearConfirmFlag: function() {
+        localStorage.removeItem(this._secMessageConfirmKey)
+      }
+    })
+  </script>
+</dom-module>

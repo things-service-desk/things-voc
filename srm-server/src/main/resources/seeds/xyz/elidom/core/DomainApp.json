@@ -1,0 +1,26 @@
+[
+  {
+    "id": "76280908-2e27-43b8-b509-e5f8d81cfae8",
+    "name": "LABEL",
+    "description": "Things Label",
+    "brandName": "Things Label",
+    "brandImage": "c004d66e-1e72-467f-a3cb-2e006252273d",
+    "theme": "things-label-theme"
+  },
+  {
+    "id": "33bb3c21-c529-410b-a560-c065d73bbaf1",
+    "name": "MES",
+    "description": "Things Boot",
+    "brandName": "Things Boot",
+    "brandImage": "25bcaab6-b42b-4a79-abca-7229e37f7223",
+    "theme": "things-xmes-theme"
+  },
+  {
+    "id": "7affe39a-7c1d-48da-9f0f-81e32bc94ecf",
+    "name": "UNREAL",
+    "description": "Things Board",
+    "brandName": "Things Board",
+    "brandImage": "908fc530-cc54-4206-949e-64f60ded5ed7",
+    "theme": "things-point-theme"
+  }
+]

@@ -1,0 +1,1458 @@
+[
+  {
+    "id": "5bfba6b1-1cbc-4e8d-b3e0-4081ffa9d6e9",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "95d0ea84-f5fb-4677-b8e2-acee511ccda3",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "69bf99c0-f965-4b51-a147-e52e5fe8a122",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "95d0ea84-f5fb-4677-b8e2-acee511ccda3",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "387c1411-dfad-46cf-9a67-ec271bcb4fca",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "95d0ea84-f5fb-4677-b8e2-acee511ccda3",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "4c59c54a-5d26-48a5-8638-de830df67e68",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "95d0ea84-f5fb-4677-b8e2-acee511ccda3",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "86770cb0-1580-4b2b-9928-191fb74205d2",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "778d7ff8-b8ad-4239-bb58-2d1650075d87",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "95beb77a-1f62-49f7-a7b1-54b7f23ed19a",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "778d7ff8-b8ad-4239-bb58-2d1650075d87",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "a19955a4-b21f-4cb1-8a99-65ccbc07d4bb",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "778d7ff8-b8ad-4239-bb58-2d1650075d87",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "6c94befc-b413-44d6-b411-445f99a10a03",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "778d7ff8-b8ad-4239-bb58-2d1650075d87",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "dae8e4e2-c9f1-4123-b43b-e611064d53d6",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "ef8a53bd-ac1a-44ca-8ced-1769896f4e2d",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "15cce633-780e-438f-8928-ae18d0a41e27",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "ef8a53bd-ac1a-44ca-8ced-1769896f4e2d",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "831d0b69-fe73-41f5-86ff-ef3f2de6a423",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "ef8a53bd-ac1a-44ca-8ced-1769896f4e2d",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "849a268e-d098-493d-ae73-74b8addb02f5",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "ef8a53bd-ac1a-44ca-8ced-1769896f4e2d",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "b5f7b5fe-61c6-4062-bbcd-4b20b7104ef8",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "75bfd482-8965-48db-8d3a-dc366e32a4a0",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "1ada2a54-e1c1-409b-baea-e3140c6c2579",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "75bfd482-8965-48db-8d3a-dc366e32a4a0",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "d2e87d39-e379-486c-af19-4e64b6a7adec",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "75bfd482-8965-48db-8d3a-dc366e32a4a0",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "06691d16-f33c-4643-88e0-7ec18743624a",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "75bfd482-8965-48db-8d3a-dc366e32a4a0",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "cb706d17-d947-4bed-8957-7d24a5124871",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "c4aa7350-4e59-438f-8c15-fd7bdad8170d",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "0f0d29f5-ee78-4183-a5f8-2b8db1bdf89a",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "c4aa7350-4e59-438f-8c15-fd7bdad8170d",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "19c66f5c-2d4b-4ac6-b17e-b6ed7ced18b2",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "c4aa7350-4e59-438f-8c15-fd7bdad8170d",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "7fbad88c-17e2-4ea1-962b-486e4dda04a8",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "c4aa7350-4e59-438f-8c15-fd7bdad8170d",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "0eef4fc3-d94c-4509-81f3-517479c7c7c9",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "a2708964-c2e6-4c07-89e0-10badaef41e2",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "b601b57c-0c64-4766-89d1-e4746792d141",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "a2708964-c2e6-4c07-89e0-10badaef41e2",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "ea78adf7-fe26-4a7b-a4a9-4882ca55ec30",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "a2708964-c2e6-4c07-89e0-10badaef41e2",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "1e8e2e6f-05af-4c9c-9387-ca0702546d01",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "a2708964-c2e6-4c07-89e0-10badaef41e2",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "be52b0d8-e2ac-4bc3-bfda-2ee67d178579",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "a004a7d1-776e-4ade-972c-a2b3f4d2370d",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "c0cc0d45-dd13-4562-9f7c-45ed1f2b4ba8",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "a004a7d1-776e-4ade-972c-a2b3f4d2370d",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "43b593c5-d516-4506-a635-52b8e8a1310c",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "a004a7d1-776e-4ade-972c-a2b3f4d2370d",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "4f205c7b-1265-4cd4-bc1a-266d78e296f7",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "a004a7d1-776e-4ade-972c-a2b3f4d2370d",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "5f5adc49-f4c8-4204-8f67-f80e7d9ba0d6",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "632eb8ef-ac68-4d52-b7b2-8fc42f055217",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "080a8716-b53a-455d-90c9-84bf3193469a",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "632eb8ef-ac68-4d52-b7b2-8fc42f055217",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "3020ea95-f939-4ad4-bfe0-91af7bf3a49c",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "632eb8ef-ac68-4d52-b7b2-8fc42f055217",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "4515bc2f-bcb7-4f56-9c31-a70b358de7af",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "632eb8ef-ac68-4d52-b7b2-8fc42f055217",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "e3dbdfb7-15b5-476a-b362-74a9623ac646",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "d291e25b-4557-4eaa-9dc9-de674139c96f",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "bf03467c-7193-434c-b751-0638b6cc3b85",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "d291e25b-4557-4eaa-9dc9-de674139c96f",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "b1bfe3f1-0291-4082-8cb6-8e60610fda13",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "d291e25b-4557-4eaa-9dc9-de674139c96f",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "027ff70d-399b-4ec1-ba4f-31e1831e0e61",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "d291e25b-4557-4eaa-9dc9-de674139c96f",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "1734487f-8a04-4036-84a0-07106dbfdbff",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "7c95b04f-bfb2-402e-a6aa-3299d74528ea",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "7e52928d-0a6d-4d28-b594-d78d2674ca7b",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "7c95b04f-bfb2-402e-a6aa-3299d74528ea",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "24ed5a96-d43d-478e-bb76-38e2447bcb50",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "7c95b04f-bfb2-402e-a6aa-3299d74528ea",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "502911bd-6b7c-4958-bd70-4fac64fbe3c2",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "7c95b04f-bfb2-402e-a6aa-3299d74528ea",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "12404a09-4131-4f37-bd66-aa753d50bcf5",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "7881f7f8-6b1c-4c72-98d7-6f4d9aae7665",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "de8ab0e7-464a-4d8e-a60c-45e22313eabb",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "7881f7f8-6b1c-4c72-98d7-6f4d9aae7665",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "04520734-4383-4d28-a7e3-628f80f69a15",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "7881f7f8-6b1c-4c72-98d7-6f4d9aae7665",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "9387ab96-c415-4cd6-af18-2029dcff4f7d",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "7881f7f8-6b1c-4c72-98d7-6f4d9aae7665",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "7c7f4050-51d4-4078-ab4a-89ee1e93b431",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "0364d72f-7bf8-4a72-b207-7a36a99711e4",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "5ad3a45b-e32e-4a50-8198-3c6984fc6990",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "0364d72f-7bf8-4a72-b207-7a36a99711e4",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "5a136a91-3da2-4868-ba04-f8344bdc8971",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "0364d72f-7bf8-4a72-b207-7a36a99711e4",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "4f6b89c9-add4-4a8b-977f-d88b83bb2d37",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "0364d72f-7bf8-4a72-b207-7a36a99711e4",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "0a9256c5-43ba-4957-877d-3a529f9c7c42",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "a70b5774-b5d7-48fb-86e4-416f1d18f30e",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "265e6120-f1f4-4c90-a1aa-73ded020b2cd",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "a70b5774-b5d7-48fb-86e4-416f1d18f30e",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "507d77fe-ef07-400a-a7bd-05375302f650",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "a70b5774-b5d7-48fb-86e4-416f1d18f30e",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "18ea6bfb-66c5-4596-bb41-5a87a27df027",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "a70b5774-b5d7-48fb-86e4-416f1d18f30e",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "f1326f3e-8822-4d80-8de4-9493765abb55",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "71475755-4dc6-498e-9cec-08309c9f61e2",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "229d6cbe-45c1-46f7-bd9b-920a1c9e7db3",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "71475755-4dc6-498e-9cec-08309c9f61e2",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "2c2a9f05-c4fe-4350-abf7-8267514f7312",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "71475755-4dc6-498e-9cec-08309c9f61e2",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "9ff1f502-84de-462e-891c-401e21830592",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "71475755-4dc6-498e-9cec-08309c9f61e2",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "ed1209bf-90c8-4a38-9430-12436730f756",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "826c2db5-a2cc-43bc-8871-983bfa6bee84",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "d3d79e9c-599a-46ae-a7b4-ea133981322b",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "0c530915-dd8a-4cbb-bdb4-82577e3132d6",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "71943afb-d7a8-4881-955c-81635f84b182",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "0c530915-dd8a-4cbb-bdb4-82577e3132d6",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "cc110ca1-87d5-4b4c-abbd-237eba177083",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "0c530915-dd8a-4cbb-bdb4-82577e3132d6",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "962967ec-999e-4892-bd58-f0ac227ea48c",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "0c530915-dd8a-4cbb-bdb4-82577e3132d6",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "97356114-9c99-4698-b85f-a2a53720bb21",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "cbe3f949-0e10-42f3-a4e0-6b6e425a61f6",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "0c9a1433-01b4-49fe-9004-a40b4a069558",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "cbe3f949-0e10-42f3-a4e0-6b6e425a61f6",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "6a34449f-75dd-4a2e-90c7-f5cd21445626",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "cbe3f949-0e10-42f3-a4e0-6b6e425a61f6",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "5807289b-3b69-46c1-a4e5-63563c3625b8",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "cbe3f949-0e10-42f3-a4e0-6b6e425a61f6",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "9234bd70-f01d-42dd-b4b6-99f6b5090f68",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "7103597f-a000-482f-bebe-d48453e7f611",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "c315c8e3-364e-49a2-a121-f9e95460ea64",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "7103597f-a000-482f-bebe-d48453e7f611",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "5ca6427c-bd46-46c8-babb-4de98aa71edd",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "7103597f-a000-482f-bebe-d48453e7f611",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "050bb2c0-8c22-4861-83da-8424902e9e13",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "7103597f-a000-482f-bebe-d48453e7f611",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "bf2ad042-214f-4698-94d4-a9d55d7e1c47",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "6a4e80eb-2d2b-4c18-8a4b-5fe15168a6cd",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "8ccb41da-d186-4e30-8972-3f6817464648",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "6a4e80eb-2d2b-4c18-8a4b-5fe15168a6cd",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "174fa968-c4ca-4073-8aec-57b9bcdae82c",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "6a4e80eb-2d2b-4c18-8a4b-5fe15168a6cd",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "a1f275db-4222-4a3c-9df2-8dc78b6d24e1",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "6a4e80eb-2d2b-4c18-8a4b-5fe15168a6cd",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "d0bcac8b-f0d9-41d5-91aa-edd1ab80e616",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "424b889e-b0c2-48ad-a42e-a48daa151d76",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "abb9556a-b68b-41d0-b491-e0321376d981",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "424b889e-b0c2-48ad-a42e-a48daa151d76",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "14601e74-7489-43e2-b821-35db16a5e997",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "424b889e-b0c2-48ad-a42e-a48daa151d76",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "3f85f2ff-1a5a-41b6-82c6-8dad5bc571ae",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "424b889e-b0c2-48ad-a42e-a48daa151d76",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "b696fd8a-c9a9-4a6c-9cbe-1e59cd0aefb5",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "b48eb224-b6db-4ee4-b84e-0d487d74f94d",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "931e03d7-4e85-4244-aec8-5753842958a1",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "b48eb224-b6db-4ee4-b84e-0d487d74f94d",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "6f587edf-df6a-4f2d-9aa8-310b43b2fef0",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "b48eb224-b6db-4ee4-b84e-0d487d74f94d",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "f4467824-b75e-49c9-b37e-8f49db1c8f06",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "b48eb224-b6db-4ee4-b84e-0d487d74f94d",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "1b0dff5d-2d37-442b-a0ca-846b982f5034",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "9d29a248-b91a-41c6-a2e0-a7f36c55437e",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "86095c47-0444-4fe6-b98c-78655d1b9ce2",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "9d29a248-b91a-41c6-a2e0-a7f36c55437e",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "b1b6269b-378c-4e4c-9ffe-6f684350f8d4",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "9d29a248-b91a-41c6-a2e0-a7f36c55437e",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "10870132-ae82-4bca-81e2-8f8f506f3218",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "9d29a248-b91a-41c6-a2e0-a7f36c55437e",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "200adc72-44f2-4e55-bd1c-87711fe9e5ff",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "5b6485c0-c71e-4c34-806c-f4c98bed1060",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "5af6c73c-f4a7-4623-bdfd-1d26daa436d3",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "5b6485c0-c71e-4c34-806c-f4c98bed1060",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "bdc3842e-5fbf-4b8d-8e5a-39827ad0b94c",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "5b6485c0-c71e-4c34-806c-f4c98bed1060",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "636f967e-0e89-437d-b0e3-d7695f32b0c2",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "5b6485c0-c71e-4c34-806c-f4c98bed1060",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "111f0eb2-5e0f-4c45-ac79-881091315a8b",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "f4ba7a31-74dd-4117-bd9e-e1511605e499",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "99289acf-3b49-4864-8dbb-51184c9250a0",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "f4ba7a31-74dd-4117-bd9e-e1511605e499",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "3ee9d3be-1584-4ee2-aada-c651743771a8",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "f4ba7a31-74dd-4117-bd9e-e1511605e499",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "576c6069-ad99-4adc-928c-2b8625c0c39d",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "f4ba7a31-74dd-4117-bd9e-e1511605e499",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "4e45fc86-23f3-44d4-a1e9-d3a45f39e731",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "8a9503a7-3a21-4e30-8a41-cb32cf8c9acd",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "7f49e16f-4418-4f3d-93fa-db4eabf49afd",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "8a9503a7-3a21-4e30-8a41-cb32cf8c9acd",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "06a56d8e-a82b-4855-9d5d-a1d61e8b3347",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "8a9503a7-3a21-4e30-8a41-cb32cf8c9acd",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "1881111e-4459-4eac-a802-132ba7c8efcb",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "8a9503a7-3a21-4e30-8a41-cb32cf8c9acd",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "376b21cc-67da-4c2e-852a-c6aa44581781",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "a11259a3-18d0-4421-a027-d9260cba6b8d",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "b8b5947c-1801-4a03-b196-2686e213d9e1",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "a11259a3-18d0-4421-a027-d9260cba6b8d",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "e6b24fe6-df0e-4068-bcd8-da7cf565fa92",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "a11259a3-18d0-4421-a027-d9260cba6b8d",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "1177fb06-1797-4435-bfef-c03569f47297",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "a11259a3-18d0-4421-a027-d9260cba6b8d",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "bb5ab710-2de5-4af0-865f-73b40675e1d1",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "94baf645-21b1-42ff-b1fb-d971191389d6",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "9f83d6a1-ae72-41cc-89c3-11f2ef58c332",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "94baf645-21b1-42ff-b1fb-d971191389d6",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "a5e7e003-fad3-4e19-ad68-b68be73830ac",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "94baf645-21b1-42ff-b1fb-d971191389d6",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "640f574c-1c9d-428e-95f3-2c6cc5ed29c3",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "94baf645-21b1-42ff-b1fb-d971191389d6",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "d00b2d1a-6b0d-48ac-8b8c-d82fa831ea73",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "db47d418-c7c3-4b00-a901-c197a4fd18b1",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "98282a6b-ccdc-4405-94fa-3ca265b4c90b",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "db47d418-c7c3-4b00-a901-c197a4fd18b1",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "fd81c8b7-9679-4f10-91c8-dead3c87ebe8",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "db47d418-c7c3-4b00-a901-c197a4fd18b1",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "abef0f35-edf2-4c39-afaa-d55297d0d946",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "db47d418-c7c3-4b00-a901-c197a4fd18b1",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "588fde07-66c5-4bd4-91ef-6e38a7564b91",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "3f40a427-6112-4a81-82fb-8b384a90e588",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "f3adb860-6408-4d97-9dd0-aed26f119212",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "3f40a427-6112-4a81-82fb-8b384a90e588",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "bdb4cfef-a7bf-4050-9b32-ad796551b2a4",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "3f40a427-6112-4a81-82fb-8b384a90e588",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "c987b3dd-b759-4b23-9c2f-b6b6a37ad226",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "3f40a427-6112-4a81-82fb-8b384a90e588",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "27dcd904-4398-4afa-9c23-6d541f86a9ec",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "e534b006-0cd8-4ddc-861b-6d43bd793071",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "5756eea9-f7bb-40e0-9082-e2e0f1f1f980",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "e534b006-0cd8-4ddc-861b-6d43bd793071",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "8f6353f2-a229-4995-b4ba-811dd4542fe6",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "e534b006-0cd8-4ddc-861b-6d43bd793071",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "7de9ed40-fcbe-4c5b-b732-c5909b4dd2c6",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "e534b006-0cd8-4ddc-861b-6d43bd793071",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "344575e2-2fcd-406d-ac71-2f5e0254ccd5",
+    "roleId": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "resourceId": "4e44b24c-8ac3-4d48-9185-ea0a8ce82445",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "90759e3f-b248-47c3-854b-28519defaa3e",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "778d7ff8-b8ad-4239-bb58-2d1650075d87",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "178eb990-22fe-48f4-b619-35a2dea9fb2b",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "778d7ff8-b8ad-4239-bb58-2d1650075d87",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "87a46842-7cd8-4ad8-a465-5e54f3cb034e",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "778d7ff8-b8ad-4239-bb58-2d1650075d87",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "31fa9085-cba9-4841-92c5-bef9e7207d36",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "778d7ff8-b8ad-4239-bb58-2d1650075d87",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "1f4b6f8d-f19f-48b1-b068-52b65669eee2",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "ef8a53bd-ac1a-44ca-8ced-1769896f4e2d",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "1dc98e5d-5bdc-4ea3-995f-50d330d13c68",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "ef8a53bd-ac1a-44ca-8ced-1769896f4e2d",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "9238789b-c252-4687-9dec-525c7ca37608",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "ef8a53bd-ac1a-44ca-8ced-1769896f4e2d",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "03e05e09-f26a-4bc9-afe5-c1c0320307fb",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "ef8a53bd-ac1a-44ca-8ced-1769896f4e2d",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "42f21b93-3802-4ce1-bba6-9303363718e4",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "c4aa7350-4e59-438f-8c15-fd7bdad8170d",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "b9eb8387-de10-470b-8885-e0d51dd46804",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "c4aa7350-4e59-438f-8c15-fd7bdad8170d",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "d72b04e0-8111-4499-ab14-a2f7412bf4d3",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "c4aa7350-4e59-438f-8c15-fd7bdad8170d",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "c1f5a784-b00a-4566-85a9-bd24f718de17",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "c4aa7350-4e59-438f-8c15-fd7bdad8170d",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "149515b2-e25b-48e4-ad21-43115deac47f",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "a2708964-c2e6-4c07-89e0-10badaef41e2",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "539aeb22-da19-4de1-8177-3f5b85d03891",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "a2708964-c2e6-4c07-89e0-10badaef41e2",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "07b85611-6599-4771-a33b-2012376c590b",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "a2708964-c2e6-4c07-89e0-10badaef41e2",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "b9d47658-fac9-47f5-aceb-ec7c1eeae8e5",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "a2708964-c2e6-4c07-89e0-10badaef41e2",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "1b660631-fa07-4573-a9a7-d335a31e5186",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "a004a7d1-776e-4ade-972c-a2b3f4d2370d",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "715e974d-409c-49fd-a51d-06d1d2ec5de0",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "a004a7d1-776e-4ade-972c-a2b3f4d2370d",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "b81182b1-3ea8-41e0-9452-9277256282bd",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "a004a7d1-776e-4ade-972c-a2b3f4d2370d",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "25b5f507-1779-442d-b4c4-07cda5f4f8fe",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "a004a7d1-776e-4ade-972c-a2b3f4d2370d",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "4c8767fc-28d5-4d54-b626-25799076d1ac",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "632eb8ef-ac68-4d52-b7b2-8fc42f055217",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "47602f26-15a0-40ea-941c-c62253dc2fb5",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "632eb8ef-ac68-4d52-b7b2-8fc42f055217",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "0bcb159b-1a5f-4b8c-b847-002a0a214922",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "632eb8ef-ac68-4d52-b7b2-8fc42f055217",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "0f1bbd59-a54b-4b41-89aa-f2e4a3f6f5cf",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "632eb8ef-ac68-4d52-b7b2-8fc42f055217",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "b12707d3-f088-4198-9b52-3766cb374484",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "d291e25b-4557-4eaa-9dc9-de674139c96f",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "5d4a86bc-3fbe-413c-b6b2-b94ed935d5c9",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "d291e25b-4557-4eaa-9dc9-de674139c96f",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "897a31f6-21f9-4791-876f-da68b4d319eb",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "d291e25b-4557-4eaa-9dc9-de674139c96f",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "82ef24ad-99d6-409f-b07b-799953a1cbe8",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "d291e25b-4557-4eaa-9dc9-de674139c96f",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "3e0c15e5-f39e-474b-8fe9-1c811ae3f3ed",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "71475755-4dc6-498e-9cec-08309c9f61e2",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "c6b87bfc-e84b-4ed1-bf9b-717219dcd685",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "71475755-4dc6-498e-9cec-08309c9f61e2",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "1d1da897-ac08-4416-a2c0-cfbb37e2a7a1",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "71475755-4dc6-498e-9cec-08309c9f61e2",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "a0884bc5-8ad4-46d5-b43d-b938a3edf5a7",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "71475755-4dc6-498e-9cec-08309c9f61e2",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "1ce90730-14e9-45d2-93d1-040dd4155093",
+    "roleId": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "resourceId": "826c2db5-a2cc-43bc-8871-983bfa6bee84",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "a0ff0bcd-4eef-4a4c-89eb-307f31a09f9f",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "95d0ea84-f5fb-4677-b8e2-acee511ccda3",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "a9152343-f654-4cba-8d3c-c432166d5374",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "95d0ea84-f5fb-4677-b8e2-acee511ccda3",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "f41169f0-93e0-4c60-ba14-e2f66760c9d3",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "95d0ea84-f5fb-4677-b8e2-acee511ccda3",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "38a91035-1710-4a8a-9182-34af2a1e19e4",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "95d0ea84-f5fb-4677-b8e2-acee511ccda3",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "0b2cff83-64dc-4f59-97c3-52ce4d91caca",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "778d7ff8-b8ad-4239-bb58-2d1650075d87",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "6d734172-99e7-42d8-8507-9f57be0b1048",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "778d7ff8-b8ad-4239-bb58-2d1650075d87",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "7b26a127-4ef3-4a9a-986e-8916fdccb0e8",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "778d7ff8-b8ad-4239-bb58-2d1650075d87",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "5c77b771-0377-4500-9ce9-154ac89176ed",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "778d7ff8-b8ad-4239-bb58-2d1650075d87",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "50c0b2e5-6a85-41b8-bce1-e19995c51bcc",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "ef8a53bd-ac1a-44ca-8ced-1769896f4e2d",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "06b12628-2341-44a3-a841-f5ffdf4a470d",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "ef8a53bd-ac1a-44ca-8ced-1769896f4e2d",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "2b6f130d-792a-490e-9d96-15cbb213c39b",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "ef8a53bd-ac1a-44ca-8ced-1769896f4e2d",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "0b0460a7-db82-45b0-907a-af4cb23df6c2",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "ef8a53bd-ac1a-44ca-8ced-1769896f4e2d",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "82171a45-f27d-4b75-b407-64e02751dc33",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "75bfd482-8965-48db-8d3a-dc366e32a4a0",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "966a8c68-8e50-4901-830c-8459e3d9afac",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "75bfd482-8965-48db-8d3a-dc366e32a4a0",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "b9574eb2-91eb-4ec9-b7c9-a578c6c7d6dc",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "75bfd482-8965-48db-8d3a-dc366e32a4a0",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "76a26ce2-b82a-4442-a8ae-2eb894f82673",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "75bfd482-8965-48db-8d3a-dc366e32a4a0",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "814c1fee-d3f9-4eda-a780-cc6506c002b4",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "c4aa7350-4e59-438f-8c15-fd7bdad8170d",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "1eb08b58-4846-4caa-8104-bf0e198aec1f",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "c4aa7350-4e59-438f-8c15-fd7bdad8170d",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "5cb94524-5d19-43d5-8aad-98e1593cbc2b",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "c4aa7350-4e59-438f-8c15-fd7bdad8170d",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "f674493f-d6e4-45a3-9a08-25ec7290709d",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "c4aa7350-4e59-438f-8c15-fd7bdad8170d",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "c86c60b9-bfe4-4a42-8fa4-d202194f0b46",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "a2708964-c2e6-4c07-89e0-10badaef41e2",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "31e23be1-7042-4b5a-83d5-5054ad7b7335",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "a2708964-c2e6-4c07-89e0-10badaef41e2",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "3bb1f477-5d4b-479f-8563-4f852aad38fc",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "a2708964-c2e6-4c07-89e0-10badaef41e2",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "b96bf5e6-5e58-4eba-a4be-23ecbd01ecb8",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "a2708964-c2e6-4c07-89e0-10badaef41e2",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "05f5a48a-f565-4b9f-bd24-626858e9ff82",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "a004a7d1-776e-4ade-972c-a2b3f4d2370d",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "076d0612-4054-4710-8585-5590fb290208",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "a004a7d1-776e-4ade-972c-a2b3f4d2370d",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "fb9baf93-0e8b-4967-9ada-79a5a39dce2e",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "a004a7d1-776e-4ade-972c-a2b3f4d2370d",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "e5759097-f218-4f6a-a640-8880bc793486",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "a004a7d1-776e-4ade-972c-a2b3f4d2370d",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "24544cfe-c5cb-4f9c-897b-551274eb7cf7",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "632eb8ef-ac68-4d52-b7b2-8fc42f055217",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "20dd5d62-55ac-4efa-84f0-513d5e44e4d0",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "632eb8ef-ac68-4d52-b7b2-8fc42f055217",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "54de2a2d-57a7-4adf-a8e3-e5d881d7a05d",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "632eb8ef-ac68-4d52-b7b2-8fc42f055217",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "9f15be06-fb4f-4ab6-b742-037ad4975b69",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "632eb8ef-ac68-4d52-b7b2-8fc42f055217",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "511c61f2-0d75-42ad-aa36-2609111223e5",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "d291e25b-4557-4eaa-9dc9-de674139c96f",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "f49aeec4-33aa-490e-bd9b-40d1eef77100",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "d291e25b-4557-4eaa-9dc9-de674139c96f",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "b37ca073-5081-41ad-918f-1dda493cd3af",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "d291e25b-4557-4eaa-9dc9-de674139c96f",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "f29c5ed8-300c-4677-8f90-f6a3f9a9e620",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "d291e25b-4557-4eaa-9dc9-de674139c96f",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "2da5ca78-1f0c-4f69-bb05-c29a96deef34",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "7c95b04f-bfb2-402e-a6aa-3299d74528ea",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "37426636-4808-4405-b7c9-bd444ea17ff2",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "7c95b04f-bfb2-402e-a6aa-3299d74528ea",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "f2498495-1d65-4895-b8eb-04fbde15d28e",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "7c95b04f-bfb2-402e-a6aa-3299d74528ea",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "7f65ba42-4958-4157-b52c-a4ccf3d7abd0",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "7c95b04f-bfb2-402e-a6aa-3299d74528ea",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "b600e32f-6dc7-47ab-9957-fb5721093bef",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "7881f7f8-6b1c-4c72-98d7-6f4d9aae7665",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "df3330e9-8128-49a4-b283-aa9ec6ba41bb",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "7881f7f8-6b1c-4c72-98d7-6f4d9aae7665",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "a73b8f49-8da0-4ed6-b783-9a0e89cd52da",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "7881f7f8-6b1c-4c72-98d7-6f4d9aae7665",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "82cbf04b-d7e0-4bc2-a666-8b9a89f1b629",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "7881f7f8-6b1c-4c72-98d7-6f4d9aae7665",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "87fda8dc-66d3-4732-bec2-3569047ae84d",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "0364d72f-7bf8-4a72-b207-7a36a99711e4",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "75f51088-29d4-453f-949b-be70dfb9dbfe",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "0364d72f-7bf8-4a72-b207-7a36a99711e4",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "50cbc293-46b7-4bc8-ab15-c0a1413dccee",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "0364d72f-7bf8-4a72-b207-7a36a99711e4",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "ad7688f1-7d4f-4ce3-b8b8-b664c9aedf4c",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "0364d72f-7bf8-4a72-b207-7a36a99711e4",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "fd925e85-70aa-4922-839e-fde0680aa7fa",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "a70b5774-b5d7-48fb-86e4-416f1d18f30e",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "95ed1f36-f8d0-441b-af36-72c7035b38c2",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "a70b5774-b5d7-48fb-86e4-416f1d18f30e",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "127b407d-a5c4-4b7c-a869-85fd2a79b4f3",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "a70b5774-b5d7-48fb-86e4-416f1d18f30e",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "0ffafd02-9d48-4602-8ca2-a5f2664d2305",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "a70b5774-b5d7-48fb-86e4-416f1d18f30e",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "a62a984f-aeae-4cd3-adba-54ae1feb7052",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "71475755-4dc6-498e-9cec-08309c9f61e2",
+    "resourceType": "Menu",
+    "actionName": "show"
+  },
+  {
+    "id": "10797384-1cb3-4ffd-89e2-cfeddeb6abdc",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "71475755-4dc6-498e-9cec-08309c9f61e2",
+    "resourceType": "Menu",
+    "actionName": "create"
+  },
+  {
+    "id": "5f48c6b7-f0e7-4aef-90f1-fcf549f785f8",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "71475755-4dc6-498e-9cec-08309c9f61e2",
+    "resourceType": "Menu",
+    "actionName": "update"
+  },
+  {
+    "id": "87ddaf19-d6e2-4e45-9d4d-792a17c1a5fe",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "71475755-4dc6-498e-9cec-08309c9f61e2",
+    "resourceType": "Menu",
+    "actionName": "delete"
+  },
+  {
+    "id": "61f942d5-7a21-4b57-a83e-08db359dfbf8",
+    "roleId": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "resourceId": "826c2db5-a2cc-43bc-8871-983bfa6bee84",
+    "resourceType": "Menu",
+    "actionName": "show"
+  }
+]

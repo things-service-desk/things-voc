@@ -1,0 +1,50 @@
+[
+  {
+    "id": "f08ab6a2-86c4-4630-a91e-b66a4571c261",
+    "description": "For Common File",
+    "name": "default",
+    "dirRule": "DAY",
+    "path": "default",
+    "defaultFlag": true,
+    "category": "default",
+    "resourceFlag": false,
+    "publicFlag": false,
+    "tag": "default"
+  },
+  {
+    "id": "29b0d24a-54e2-4319-b8d8-926c452bccbf",
+    "description": "For images",
+    "name": "image",
+    "dirRule": "",
+    "path": "image",
+    "defaultFlag": false,
+    "category": "image",
+    "resourceFlag": false,
+    "publicFlag": false,
+    "tag": "image"
+  },
+  {
+    "id": "b06e3f8e-f1ce-4d02-a7d4-3ac60db0243f",
+    "description": "For Resources",
+    "name": "resources",
+    "dirRule": "MONTH",
+    "path": "resources",
+    "defaultFlag": false,
+    "category": "resource",
+    "resourceFlag": true,
+    "publicFlag": false,
+    "tag": "resource,entity"
+  },
+  {
+    "id": "62a04566-895f-47f4-83a5-4ab7c1dab9e0",
+    "description": "For Videos",
+    "name": "video",
+    "dirRule": "",
+    "path": "video",
+    "defaultFlag": false,
+    "category": "video",
+    "resourceFlag": false,
+    "publicFlag": false,
+    "tag": "video"
+  }
+]

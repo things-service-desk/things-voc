@@ -1,0 +1,17 @@
+[
+  {
+    "id": "db4ee020-07dc-4e4f-819f-43e375cd97ea",
+    "name": "developer",
+    "description": "개발자"
+  },
+  {
+    "id": "305b0aaa-7e65-4dc8-a559-8f6e091e4041",
+    "name": "guest",
+    "description": "게스트"
+  },
+  {
+    "id": "5970e971-183d-4c2e-8c15-5bf769005df4",
+    "name": "manager",
+    "description": "관리자"
+  }
+]

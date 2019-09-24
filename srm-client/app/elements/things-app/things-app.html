@@ -1,0 +1,399 @@
+<link rel="import" href="things-app-import.html" />
+
+<link rel="import" href="../../bower_components/things-global-behavior/things-global-behavior.html" />
+<link rel="import" href="../../bower_components/things-msg-box-behavior/things-msg-box-behavior.html" />
+
+<dom-module id="things-app">
+  <template>
+    <style include="shared-styles"></style>
+    <style>
+      @import 'theme.css';
+
+      :host {
+      }
+
+      .flex-horizontal-with-ratios {
+        @apply (--layout-horizontal);
+      }
+
+      .flexchild {
+        @apply (--layout-flex);
+      }
+
+      .flex2child {
+        @apply (--layout-flex-2);
+      }
+
+      .flex3child {
+        @apply (--layout-flex-3);
+      }
+
+      .flex4child {
+        @apply (--layout-flex-4);
+      }
+
+      .flex5child {
+        @apply (--layout-flex-5);
+      }
+
+      .container.flex5child {
+        @apply (--layout-vertical);
+      }
+
+      things-logout::shadow paper-icon-button {
+        @apply (--things-small-icon);
+        float: right;
+        margin-top: 1px;
+        margin-right: -37px;
+      }
+
+      div.flex-horizontal-with-ratios {
+        height: 100%;
+      }
+
+      iron-pages {
+        @apply (--layout-flex);
+        @apply (--layout-vertical);
+      }
+
+      iron-pages * {
+        @apply (--layout-flex);
+      }
+
+      ::shadow things-resource-combo.things-profile-dialog iron-icon {
+        padding: 0 !important;
+        margin-bottom: 0 !important;
+      }
+
+      ::shadow things-resource-combo.things-profile-dialog label {
+        width: 45px;
+        padding-right: 0px;
+      }
+
+      paper-toolbar {
+        background-color: var(--things-primary-background-color);
+        height: 45px;
+      }
+
+      paper-toolbar::shadow #topBar {
+        height: 45px;
+      }
+
+      paper-toolbar .title {
+        margin-left: 32px !important;
+        line-height: initial !important;
+      }
+
+      #mainSection {
+        background-color: #ecf2f6;
+      }
+
+      #mainSection:-webkit-full-screen {
+        width: 100%;
+      }
+
+      #mainSection:-moz-full-screen {
+        width: 100%;
+      }
+
+      #mainSection:-ms-full-screen {
+        width: 100%;
+      }
+
+      #mainSection:-o-full-screen {
+        width: 100%;
+      }
+
+      #mainSection:full-screen {
+        width: 100%;
+      }
+
+      #fullscreen-btn {
+        @apply (--things-header-button);
+        border: none;
+        background: url(/images/icon-fullscreen.png) 50% 50% no-repeat;
+      }
+
+      #recent-pages-btn {
+        @apply (--things-header-button);
+        border: none;
+        background: url(/images/icon-collapse.png) 70% 50% no-repeat;
+      }
+
+      things-alarm-badge {
+        color: #6a83b8;
+      }
+
+      things-alarm-badge::shadow paper-badge {
+        margin-left: 20px;
+      }
+
+      things-alarm-badge::shadow paper-badge::shadow div {
+        background-color: #ff5722 !important;
+      }
+
+      things-alarm-badge::shadow paper-badge::shadow div span {
+        margin-top: 1px;
+      }
+
+      /*things-sidebar::shadow .brand{
+        background:url(/images/icon-brand-center.png) 50% 10px no-repeat #555c6b;
+        min-height:85px;
+        font-size:0px;
+      }*/
+
+      .user-menu {
+        @apply (--things-user-menu);
+      }
+
+      things-profile {
+        background-color: transparent;
+      }
+
+      ::shadow paper-button.things-sidebar {
+        @apply (--things-sidebar-menu);
+      }
+
+      ::shadow paper-listbox.things-sidebar {
+        border-left-width: 5px;
+      }
+
+      ::shadow paper-listbox.things-sidebar paper-item {
+        font-size: 14px !important;
+        border-bottom: none;
+        min-height: 25px !important;
+        color: #758597;
+        line-height: 2 !important;
+      }
+
+      ::shadow paper-listbox.things-sidebar paper-item.things-sidebar::before {
+        width: 6px;
+        height: 6px;
+        border: 2px solid #8494a3;
+        border-radius: 5px;
+        background-color: transparent;
+        top: 0px;
+        margin-right: 2px;
+      }
+
+      paper-toolbar {
+        /*background:url(/images/icon-header.png)  20px 50% no-repeat #fff;*/
+        background-color: #fff;
+        height: 45px;
+        -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+      }
+
+      paper-toolbar span.title {
+        margin-top: 3px;
+        margin-left: 0 !important;
+        color: #585858;
+        font-weight: bold;
+        font-size: 26px;
+      }
+
+      paper-toolbar span.title span {
+        display: inline-block;
+        margin-right: 7px;
+        font-weight: normal;
+        color: #7c91b0;
+        font-size: 26px;
+        text-transform: capitalize;
+      }
+
+      things-header::shadow #sidebar-toggler {
+        background-image: none !important;
+      }
+
+      things-sidebar {
+        background-color: #555c6b !important;
+      }
+
+      ::shadow .header.things-login:before {
+        display: none !important;
+      }
+
+      ::shadow paper-material.things-login {
+        border-radius: 0 !important;
+      }
+
+      @media screen and (max-width: 760px) {
+        paper-toolbar {
+          background: var(--things-secondary-color);
+        }
+
+        paper-toolbar ::shadow span.title {
+          text-align: center;
+          color: var(--things-secondary-background-color) !important;
+        }
+
+        paper-toolbar ::shadow span.title span {
+          color: #fff !important;
+          font-size: 26px !important;
+          font-weight: bold !important;
+        }
+      }
+    </style>
+
+    <!-- prettier-ignore-attribute on-iron-localstorage-load-empty -->
+    <iron-localstorage
+      id="localStorage"
+      name="{$ appName $}"
+      value="{{ storage }}"
+      on-iron-localstorage-load-empty="initializeDefaultStorage"
+    >
+    </iron-localstorage>
+
+    <!-- Domain Application Ajax : For Brand Image, Brand Title, Theme -->
+    <things-ajax
+      auto
+      id="domain-app-ajax"
+      method="GET"
+      resource-url="domain_apps/find_by_name/MES"
+      last-response="{{ domainAppObj }}"
+    >
+    </things-ajax>
+
+    <things-ajax
+      auto
+      id="encrypt-fields"
+      method="GET"
+      resource-url="settings/show_by_name?name=security.encrypt.fields"
+      resource-action="show_by_name"
+      last-response="{{ encryptFieldsObj }}"
+    >
+    </things-ajax>
+
+    <things-notice></things-notice>
+
+    <paper-drawer-panel id="paperDrawerPanel" responsive-width="599px" drawer-width="220px">
+      <!-- Layout Sidebar -->
+      <things-sidebar
+        drawer
+        menu-category="STANDARD"
+        drawer-id="paperDrawerPanel"
+        page-content-id="_content_"
+        class="layout vertical"
+        home-routing="[[globals.defaultScreen]]"
+        current-menu="{{ currentMenu }}"
+        current-menu="1"
+        play-interval="10000"
+        current-screen="{{ currentScreen }}"
+        resource-action="index"
+        brand-name="[[domainAppObj.brand_name]]"
+        menu-group="{{ menuGroup }}"
+        query-fields="[{&quot;name&quot;:&quot;category&quot;,&quot;operator&quot;:&quot;noteq&quot;,&quot;value&quot;:&quot;TERMINAL&quot;}]"
+      >
+        <div class="user-menu header">
+          <!-- sidebar header toolbar menu start-->
+          <things-profile
+            system="Things Suite"
+            role-list-url="roles"
+            role-request-url="request_auths/account/auth/request"
+            default-locale="ko-KR"
+          >
+          </things-profile>
+          <!-- setting -->
+          <things-setting></things-setting>
+
+          <!-- logout -->
+          <!-- prettier-ignore-attribute on-things-logout-succeed -->
+          <things-logout
+            id="logout"
+            logout-path="logout"
+            icon="icons:power-settings-new"
+            on-things-logout-succeed="onThingsLogoutSuccess"
+          >
+          </things-logout>
+
+          <!-- export locales -->
+          <!--things-i18n-export-locales></things-i18n-export-locales-->
+          <!-- sidebar header toolbar menu end -->
+        </div>
+      </things-sidebar>
+
+      <!-- Main Area -->
+      <paper-scroll-header-panel id="headerPanelMain" class="flex" main condenses keep-condensed-header>
+        <!-- Layout Header -->
+        <things-header id="thingsHeader" drawer-id="paperDrawerPanel" brand-image-id="[[domainAppObj.brand_image]]">
+        </things-header>
+
+        <!-- Main Content -->
+        <div class="container flex-horizontal-with-ratios">
+          <!-- Layout Toolbar를 위한 DIV 추가 -->
+          <div class="container flex vertical flex5child" id="mainSection">
+            <paper-toolbar>
+              <span class="title"><span>[[currentScreen.parent_name]]</span>[[currentScreen.title]]</span>
+              <!--things-alarm-badge></things-alarm-badge>
+              <button id="fullscreen-btn" on-tap="toggleFullscreen"></button>
+              <paper-tooltip for="fullscreen-btn" offset="0">
+                <things-i18n-msg msgid="button.fullscreen">Full Screen</things-i18n-msg>
+              </paper-tooltip>
+              <paper-icon-button id="recent-pages-btn" on-tap="toggleRecentPages"></paper-icon-button-->
+            </paper-toolbar>
+
+            <!-- dialogs must be in side of full screen elements -->
+            <!-- form validators -->
+            <things-validators id="validators"></things-validators>
+
+            <!-- dialog manager -->
+            <things-dialog-manager id="dialog-manager" locale="[[globals.locale]]"></things-dialog-manager>
+
+            <iron-pages attr-for-selected="data-route" selected="{{ route }}" class="content flex5child" id="_content_">
+              <things-login
+                use-oi-screen
+                class="login-image"
+                oi-screen-path="/index.html"
+                data-route="login"
+                route="{{ route }}"
+                title="Things"
+                login-path="login"
+                content-type="application/x-www-form-urlencoded"
+                success-route="/"
+                username-input-label="ID"
+                password-input-label="Password"
+                submit-label="sign_up"
+                brand-name="[[domainAppObj.brand_name]]"
+                Reset-label="Reset"
+              >
+              </things-login>
+              <things-home data-route="/"></things-home>
+            </iron-pages>
+          </div>
+
+          <template is="dom-if" if="[[showRecentPages]]">
+            <things-recent-page id="recent-page" class="flexchild"></things-recent-page>
+            <iron-localstorage name="setting.useRecentPages" value="{{ useRecentPages }}"></iron-localstorage>
+          </template>
+        </div>
+
+        <things-spinner id="spinner" loading="false"></things-spinner>
+      </paper-scroll-header-panel>
+    </paper-drawer-panel>
+
+    <!--things-ws-subscriber
+      auto
+      url-key="wsUrl"
+      subject="/elidom/stomp/topic/notice">
+    </things-ws-subscriber-->
+
+    <paper-toast id="confirmToast" class="Toast" duration="8000">
+      <!-- prettier-ignore-attribute on-tap -->
+      <span class="Toast-button" role="button" tabindex="0" on-tap="onConfirmToastTap">OK</span>
+    </paper-toast>
+
+    <paper-toast id="infoToast" class="Toast" duration="1000"></paper-toast>
+
+    <!-- div for DataLudi Report -->
+    <div id="report-container" style="height:0px;" class="loader"></div>
+
+    <things-event-manager
+      app-id="stdapp"
+      events="[{&quot;name&quot;: &quot;success&quot;, &quot;function&quot;: &quot;showToastInfo&quot;}, {&quot;name&quot;: &quot;failure&quot;, &quot;function&quot;: &quot;showToastConfirm&quot;}]"
+    >
+    </things-event-manager>
+  </template>
+
+  <script src="things-app.js"></script>
+</dom-module>

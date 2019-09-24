@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.7.7",
+    "connect-history-api-fallback": "^1.1.0",
+    "del": "^3.0.0",
+    "es6-promise": "^4.2.5",
+    "glob-all": "^3.0.1",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-changed": "^3.2.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-size": "^3.0.0",
+    "gulp-uglify": "^3.0.1",
+    "gulp-useref": "^3.0.5",
+    "gulp-vulcanize": "^8.0.0",
+    "merge-stream": "^1.0.0",
+    "prettier": "^1.15.3",
+    "vulcanize": ">= 1.4.2",
+    "web-component-tester": "^6.9.0"
+  },
+  "license": "http://license.hatiolab.com/EULA",
+  "scripts": {
+    "test": "gulp test:local",
+    "start": "gulp serve",
+    "prettify": "prettier --write \"app/!(bower_components)/**/!(things-lic).{js,css,html}\""
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "bower-npm-resolver": "^0.9.1",
+    "chart.js": "^2.2.1"
+  },
+  "false": {}
+}

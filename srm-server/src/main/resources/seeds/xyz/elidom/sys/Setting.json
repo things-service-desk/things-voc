@@ -1,0 +1,170 @@
+[
+  {
+    "id": "3aebd690-4d4a-4f78-9819-bf496b910cfa",
+    "name": "seed.source",
+    "description": "Seed 모드 - (seed-file / seed-server)",
+    "value": "seed-file",
+    "category": "common"
+  },
+  {
+    "id": "4450d359-485d-4e7d-bacd-2cb88ee8dba0",
+    "name": "locale.default",
+    "description": "기본 로케일",
+    "value": "ko-KR",
+    "category": "common"
+  },
+  {
+    "id": "9975ab74-f4a5-4661-a9ab-50dddd63e8ad",
+    "name": "error.unwritable.exception.types",
+    "description": "Error Log를 저장하지 않을 Exception 설정",
+    "value": "",
+    "category": "common"
+  },
+  {
+    "id": "56bc96da-7c26-47fb-8121-d14bdfe145b5",
+    "name": "screen.pagination.page.limit",
+    "description": "그리드 페이지네이션을 위한 페이지 당 표시할 레코드 수 ",
+    "value": "50",
+    "category": "common"
+  },
+  {
+    "id": "8aecc8c0-14d3-4bc2-96f8-ad5c4fcc3009",
+    "name": "error.save.status.list",
+    "description": "DB에 저장하고자 하는 Error Status 목록.(ex : 500,401,403...) 값이 지정되어 있지 않으면, 모든 Status에 대하여 Log를 저장.",
+    "value": "",
+    "category": "common"
+  },
+  {
+    "id": "3aecc8c0-4ed9-7cd3-85d7-qd5c4fcc4113",
+    "name": "error.save.enable",
+    "description": "에러를 저장할 지 여부",
+    "value": "true",
+    "category": "common"
+  },
+  {
+    "id": "9834ab26-5bcb-4a6f-951e-5e50b21023cc",
+    "name": "notice.default.subject",
+    "description": "알림에서 Publish할 기본 채널",
+    "value": "/elidom/stomp/topic/notice",
+    "category": "common"
+  },
+  {
+    "id": "882d880c-c927-413e-bffc-7188302798ca",
+    "name": "security.init.pass",
+    "description": "초기 패스워드 정보",
+    "value": "elidom",
+    "category": "common"
+  },
+  {
+    "id": "90318741-408b-4fc1-8c39-a998daf704c0",
+    "name": "upload.file.limit.size",
+    "description": "업로드 최대 사이즈 (MB)",
+    "value": "500",
+    "category": "common"
+  },
+  {
+    "id": "1c6f8d84-f2a4-45e0-9f98-b42785c8fdb3",
+    "name": "error.print.stack.trace",
+    "description": "에러 발생시 Stack Trace를 프린트할 것인지 여부",
+    "value": "true",
+    "category": "common"
+  },
+  {
+    "id": "996f9b48-f930-4be3-ada5-da14fb29c6a1",
+    "name": "security.use.random.init.pass",
+    "description": "패스워드 초기화시 랜덤 사용",
+    "value": "true",
+    "category": "common"
+  },
+  {
+    "id": "65dbd6e9-a843-4759-ab49-4363a58d56b2",
+    "name": "attach.file.delete",
+    "description": "Attachment 삭제시 물리적 파일도 삭제 여부",
+    "value": "true",
+    "category": "common"
+  },
+  {
+    "id": "b4759210-b635-4be7-92a2-9937c56746e5",
+    "name": "module.not.modifiable.list",
+    "description": "개발시 변경 되어서는 안되는 모듈 리스트",
+    "value": "base",
+    "category": "common"
+  },
+  {
+    "id": "d5cde791-2993-43c0-9bd9-d3ac0fe8f223",
+    "name": "user.password.change.later.day",
+    "description": "비밀번호 연장 일수",
+    "value": "30",
+    "category": "common"
+  },
+  {
+    "id": "2a67db37-1639-4576-afbf-f6ee4ecfd4e2",
+    "name": "user.password.change.period.day",
+    "description": "비밀번호 변경 주기",
+    "value": "90",
+    "category": "common"
+  },
+  {
+    "id": "d3c9587d-4671-4070-b1e7-d48dcbaa2721",
+    "name": "user.password.expire.enable",
+    "description": "비밀번호 만료 설정",
+    "value": "false",
+    "category": "common"
+  },
+  {
+    "id": "29acbf8b-f783-4a03-a84e-bd445786932d",
+    "name": "file.root.path",
+    "description": "File Storage Root Path",
+    "value": "/storage",
+    "category": "common"
+  },
+  {
+    "id": "43eb1676-bdcb-4b12-a5f7-1ac6a7227938",
+    "name": "client.context.path",
+    "description": "메일 전송시 화면에 접속하기 위한 URL Link를 위한 화면 접속 정보",
+    "value": "http://boot.hatiolab.com",
+    "category": "common"
+  },
+  {
+    "id": "506e4823-c17e-4a4c-8698-1de9318f5ef7",
+    "name": "file.context.path",
+    "description": "File Context Path",
+    "value": "http://boot.hatiolab.com:8000/storage/",
+    "category": "common"
+  },
+  {
+    "id": "ee9a11ea-0372-41fa-8172-7f0874510df3",
+    "name": "security.all.permit.uri",
+    "description": "권한 체크를 하지 않을 URL 리스트",
+    "value": "/rest/login,/rest/logout,/rest/terminologies/resource,/rest/users/register,/rest/users/request_init_pass,/rest/users/approval,/rest/users/reject,/rest/users/init_pass,/rest/users/active,/rest/users/request_active,/rest/domains/list,/rest/request_roles/reject,/rest/request_roles/approval,/rest/users/inactive,/rest/common_codes/show_by_name,/rest/seeds,/rest/download/public,/rest/request_auths/account/register/request,/rest/request_auths/password/reset/request,/rest/request_auths/account/activate/request,/rest/domains/current_domain,/rest/domain_apps",
+    "category": "common"
+  },
+  {
+    "id": "e631c640-219d-4850-81fc-6e0d078e36f3",
+    "name": "security.read.only.uri",
+    "description": "읽기 전용 URI 설정 (GET Method)",
+    "value": "/rest/fonts,/rest/download/public,/rest/publishers",
+    "category": "common"
+  },
+  {
+    "id": "b1191024-5d05-4237-aeae-221d7f10a948",
+    "name": "seed.export.repo.id",
+    "description": "Seed Repository ID For Export",
+    "value": "8a2438a7-35a0-48c5-8c59-d2501c1f5235",
+    "category": "common"
+  },
+  {
+    "id": "6d1c30a8-559c-4a29-9b7c-e3698d5083df",
+    "name": "seed.server.base.url",
+    "description": "Seed Server URL",
+    "value": "http://admin.hatiolab.com/rest",
+    "category": "common"
+  },
+  {
+    "id": "829dfc62-a62b-444c-85f2-a9b95f9afd18",
+    "name": "server.contrext.path",
+    "description": "Server Context Path",
+    "value": "http://boot.hatiolab.com",
+    "category": "common"
+  }
+]
