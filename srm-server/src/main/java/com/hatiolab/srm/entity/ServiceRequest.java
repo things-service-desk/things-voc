@@ -1,13 +1,19 @@
 package com.hatiolab.srm.entity;
 
-import java.util.Date; 
-import xyz.elidom.dbist.annotation.Column;
-import xyz.elidom.dbist.annotation.PrimaryKey;
-import xyz.elidom.dbist.annotation.GenerationRule;
-import xyz.elidom.dbist.annotation.Table;
-import xyz.elidom.dbist.annotation.Relation;
-import com.hatiolab.srm.entity.relation.SiteRef;
+import java.util.Date;
+
 import com.hatiolab.srm.entity.relation.ManagerRef;
+import com.hatiolab.srm.entity.relation.SiteRef;
+import com.hatiolab.srm.rest.SiteManagerLinkController;
+
+import xyz.elidom.dbist.annotation.Column;
+import xyz.elidom.dbist.annotation.GenerationRule;
+import xyz.elidom.dbist.annotation.PrimaryKey;
+import xyz.elidom.dbist.annotation.Relation;
+import xyz.elidom.dbist.annotation.Table;
+import xyz.elidom.orm.IQueryManager;
+import xyz.elidom.sys.util.ValueUtil;
+import xyz.elidom.util.BeanUtil;
 
 @Table(name = "srm_service_request", idStrategy = GenerationRule.UUID)
 public class ServiceRequest extends xyz.elidom.orm.entity.basic.ElidomStampHook {
@@ -298,5 +304,50 @@ public class ServiceRequest extends xyz.elidom.orm.entity.basic.ElidomStampHook 
 
 	public void setManHours(Integer manHours) {
 		this.manHours = manHours;
-	}	
+	}
+
+	@Override
+	public void afterCreate() {
+		super.afterCreate();
+		
+		if ( this.getHatiolabUserId() != 0 ) {
+			this.saveSiteManagerLink(this.getHatiolabUserId());
+		}
+		
+		if ( this.getCustomUserId() != 0 ) {
+			this.saveSiteManagerLink(this.getCustomUserId());
+		}
+		
+	}
+
+	@Override
+	public void afterUpdate() {
+		super.afterUpdate();
+		
+		if ( this.getHatiolabUserId() != 0 ) {
+			this.saveSiteManagerLink(this.getHatiolabUserId());
+		}
+		
+		if ( this.getCustomUserId() != 0 ) {
+			this.saveSiteManagerLink(this.getCustomUserId());
+		}
+	}
+	
+	public void saveSiteManagerLink(int managerId) {
+		// 입력 값에 사이트가 입력된 경우
+		if ( this.getSiteId() != 0 ) {
+			// 하티오랩 담당자가 입된 경우 사이트에 하티오랩 담당자 연결
+			if( managerId != 0 ) {
+				SiteManagerLink condition = new SiteManagerLink();
+				condition.setSiteId(this.getSiteId());
+				condition.setManagerId(managerId);
+				
+				SiteManagerLink link = BeanUtil.get(IQueryManager.class).selectByCondition(SiteManagerLink.class, condition);
+				if ( ValueUtil.isEmpty(link) ) {
+					BeanUtil.get(SiteManagerLinkController.class).create(condition);
+				}
+			}
+		}
+	}
+	
 }
